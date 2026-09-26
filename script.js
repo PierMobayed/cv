@@ -242,7 +242,7 @@ Key Capabilities:
 
     contact: `GET IN TOUCH:
   • Email:    piermtech@gmail.com
-  • Phone:    07387226498
+  • Phone:    *** *** ***
   • Location: Leeds, West Yorkshire, United Kingdom
   • GitHub:   https://github.com/PierMobayed
   • LinkedIn: https://linkedin.com/in/piermobayed`,

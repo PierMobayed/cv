@@ -1,6 +1,6 @@
 # Pier Mobayed
 **Graduate Cyber Security Engineer, Junior SOC Analyst**  
-📍 Leeds, United Kingdom | ✉️ piermtech@gmail.com | 📞 07387226498  
+📍 Leeds, United Kingdom | ✉️ piermtech@gmail.com | 📞 *** *** ***  
 🔗 [LinkedIn](https://linkedin.com/in/piermobayed) | 💻 [GitHub](https://github.com/PierMobayed)
 
 ---
