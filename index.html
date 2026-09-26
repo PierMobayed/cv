@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pier Mobayed — Cyber Security Engineer, Network & Infrastructure Specialist, and Systems Developer. BSc (Hons) Computer Science First Class Honours (75%).">
+  <meta name="keywords" content="Pier Mobayed, Cyber Security, Network Engineer, SOC Analyst, Leeds, First Class Honours, Cisco, Python, PowerShell, FastAPI, React">
+  <meta name="author" content="Pier Mobayed">
+  <meta property="og:title" content="Pier Mobayed | Cyber Security Engineer & Systems Architect">
+  <meta property="og:description" content="First-Class Honours (75%) Computer Science Graduate specializing in Network Defense, Digital Forensics, and High-Performance Systems.">
+  <meta property="og:type" content="website">
+
+  <title>Pier Mobayed | Cyber Security & Systems Engineer</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Grid & Glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">PM</span>
+        <span class="logo-slash">/</span>
+        <span class="logo-bracket">&gt;</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <div class="status-badge-nav">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Open to Opportunities • Leeds & Remote UK</span>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#terminal-section" class="nav-link">CLI</a>
+        <a href="#contact" class="nav-link nav-btn-contact">Contact</a>
+        <button id="open-cv-modal-btn" class="btn-cv-nav">View CV</button>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#education" class="mobile-nav-link">Education & Modules</a>
+    <a href="#projects" class="mobile-nav-link">Featured Projects</a>
+    <a href="#skills" class="mobile-nav-link">Technical Skills</a>
+    <a href="#terminal-section" class="mobile-nav-link">Interactive Terminal</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <button id="open-cv-modal-btn-mobile" class="btn-primary" style="margin-top: 1rem; width: 100%;">View Full CV</button>
+  </div>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-badge">
+          <span class="badge-icon">🎓</span>
+          <span>BSc (Hons) Computer Science • First Class Honours (75%)</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Pier Mobayed</span>
+        </h1>
+
+        <div class="hero-roles">
+          <span class="role-tag">🛡️ Cyber Security Engineer</span>
+          <span class="role-tag">🌐 Network & Infrastructure</span>
+          <span class="role-tag">⚡ Distributed Systems</span>
+        </div>
+
+        <p class="hero-description">
+          First-Class Honours graduate based in <strong>Leeds, UK</strong>, specializing in enterprise Cisco network design, digital forensic investigation, low-level OS security hardening, and resilient automated infrastructure. Proven track record deploying live open-source tools (<a href="https://ped.run" target="_blank" class="accent-link">ped.run</a>), multi-agent orchestration frameworks with 127+ automated tests, and sub-5ms low-latency backend architectures.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+          <button id="hero-cv-btn" class="btn btn-secondary">
+            <span>View CV & Resume</span>
+            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+          </button>
+          <a href="#terminal-section" class="btn btn-terminal">
+            <span>Launch Terminal</span>
+            <span class="terminal-blink">_</span>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <!-- Quick Contacts Bar -->
+        <div class="hero-quick-meta">
+          <div class="meta-item">
+            <span class="meta-icon">📍</span>
+            <span>Leeds, United Kingdom (Open to Hybrid / Remote)</span>
+          </div>
+          <div class="meta-separator">•</div>
+          <div class="meta-item clickable" id="copy-email-hero" title="Click to copy email">
+            <span class="meta-icon">✉️</span>
+            <span class="underline-hover">piermtech@gmail.com</span>
+            <span class="copy-badge">copy</span>
+          </div>
+          <div class="meta-separator">•</div>
+          <div class="meta-item">
+            <span class="meta-icon">📞</span>
+            <span>07387226498</span>
+          </div>
+          <div class="meta-separator">•</div>
+          <div class="meta-item">
+            <a href="https://github.com/PierMobayed" target="_blank" rel="noopener noreferrer" class="social-link-hero">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div class="meta-separator">•</div>
+          <div class="meta-item">
+            <a href="https://linkedin.com/in/piermobayed" target="_blank" rel="noopener noreferrer" class="social-link-hero">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Metrics Strip -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value">75%</div>
+            <div class="metric-label">First Class Degree Overall</div>
+            <div class="metric-sub">BSc (Hons) Computer Science</div>
+          </div>
+          <div class="metric-card highlight-cyan">
+            <div class="metric-value">83%</div>
+            <div class="metric-label">Advanced Networking</div>
+            <div class="metric-sub">Cisco Routing, BGP, OSPF, VLANs</div>
+          </div>
+          <div class="metric-card highlight-emerald">
+            <div class="metric-value">77%</div>
+            <div class="metric-label">Digital Forensics</div>
+            <div class="metric-sub">Autopsy, FTK Imager, Wireshark</div>
+          </div>
+          <div class="metric-card highlight-violet">
+            <div class="metric-value">127+</div>
+            <div class="metric-label">Automated TDD Tests</div>
+            <div class="metric-sub">node:test Multi-Agent Suite</div>
+          </div>
+          <div class="metric-card highlight-amber">
+            <div class="metric-value">ped.run</div>
+            <div class="metric-label">Live Open-Source Tool</div>
+            <div class="metric-sub">Windows Hardening & Admin</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">PROFILE OVERVIEW</span>
+          <h2 class="section-title">Bridging Network Infrastructure, Security & Scalable Software</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a <strong>First-Class Honours Computer Science graduate</strong> with deep practical competence across defensive cyber security, enterprise network engineering, and production software development. My focus spans the entire spectrum: from packet inspection with Wireshark and BGP/OSPF network design, to Windows kernel hardening, memory/disk digital forensics, and microservice architectures.
+            </p>
+            <p>
+              Unlike conventional graduate engineers who rely solely on classroom assignments, I actively design and maintain <strong>real-world software solutions</strong>. My public tool <a href="https://ped.run" target="_blank" class="accent-link">PEDToolBox (ped.run)</a> delivers zero-touch Windows configuration, automated restore points, and deep registry tuning for users globally. Concurrently, my work on the <a href="#projects" class="accent-link">PM Bridge System</a> orchestrated multiple leading AI models via Chrome DevTools Protocol, backed by an uncompromising suite of 127+ automated unit and integration tests.
+            </p>
+            <p>
+              Whether configuring firewall access policies, analyzing network dumps for anomalous intrusions, or optimizing RESTful APIs for sub-5ms latencies, I bring analytical precision, security-first architecture, and proactive curiosity to technical teams.
+            </p>
+
+            <div class="about-points">
+              <div class="point-item">
+                <span class="point-check">✓</span>
+                <span><strong>IASME & OWASP Compliance:</strong> Thoroughly versed in UK security standards, vulnerability remediation, and the Computer Misuse Act 1990.</span>
+              </div>
+              <div class="point-item">
+                <span class="point-check">✓</span>
+                <span><strong>Zero-Downtime Reliability:</strong> Rigorous unit and integration test culture (TDD) across all personal and collaborative codebases.</span>
+              </div>
+              <div class="point-item">
+                <span class="point-check">✓</span>
+                <span><strong>Cross-Disciplinary Versatility:</strong> Seamlessly navigating between Bash/Linux, Windows PowerShell internals, Python FastAPI, and Modern React/TypeScript.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card-terminal">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">pier_profile.json</span>
+            </div>
+            <pre class="terminal-code"><code>{
+  <span class="json-key">"candidate"</span>: <span class="json-str">"Pier Mobayed"</span>,
+  <span class="json-key">"status"</span>: <span class="json-str">"First Class Honours Graduate"</span>,
+  <span class="json-key">"degree_score"</span>: <span class="json-num">75.0</span>,
+  <span class="json-key">"location"</span>: <span class="json-str">"Leeds, West Yorkshire, UK"</span>,
+  <span class="json-key">"target_roles"</span>: [
+    <span class="json-str">"Graduate Cyber Security Engineer"</span>,
+    <span class="json-str">"Junior SOC Analyst (L1/L2)"</span>,
+    <span class="json-str">"Junior Network / Infrastructure Engineer"</span>,
+    <span class="json-str">"Junior DevSecOps / Cloud Engineer"</span>
+  ],
+  <span class="json-key">"key_strengths"</span>: [
+    <span class="json-str">"Cisco Enterprise Routing (BGP/OSPF)"</span>,
+    <span class="json-str">"Digital Forensics & Incident Response"</span>,
+    <span class="json-str">"Windows Internals & Registry Hardening"</span>,
+    <span class="json-str">"High-throughput FastAPI & Sub-5ms P95"</span>,
+    <span class="json-str">"Automated TDD (127+ integration tests)"</span>
+  ],
+  <span class="json-key">"open_to"</span>: <span class="json-str">"Leeds / Hybrid / Remote (UK)"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Academic Achievements -->
+    <section id="education" class="section education-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">ACADEMIC EXCELLENCE</span>
+          <h2 class="section-title">BSc (Hons) Computer Science — First Class Honours (75%)</h2>
+          <p class="section-subtitle">University / NCG (Elizabeth School) • 2023 – 2026</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="modules-grid">
+
+          <!-- Advanced Networking -->
+          <div class="module-card featured-module">
+            <div class="module-header">
+              <div class="module-score-pill score-high">83% First Class</div>
+              <span class="module-year">Year 3 Advanced</span>
+            </div>
+            <h3 class="module-title">Advanced Networking</h3>
+            <p class="module-desc">
+              Comprehensive enterprise network topology design and implementation. Mastered Cisco IOS routing and switching, Border Gateway Protocol (BGP), Open Shortest Path First (OSPF), VLAN segmentation, inter-VLAN routing, IPv4/IPv6 subnetting, packet inspection with Wireshark, and alignment with UK IASME Cyber Assurance standards.
+            </p>
+            <div class="module-tags">
+              <span>Cisco IOS</span>
+              <span>BGP</span>
+              <span>OSPF</span>
+              <span>VLANs</span>
+              <span>Wireshark</span>
+              <span>IASME Standards</span>
+            </div>
+          </div>
+
+          <!-- Digital Forensics -->
+          <div class="module-card featured-module">
+            <div class="module-header">
+              <div class="module-score-pill score-high">77% First Class</div>
+              <span class="module-year">Year 3 Advanced</span>
+            </div>
+            <h3 class="module-title">Digital Forensic Investigation</h3>
+            <p class="module-desc">
+              Hands-on memory and storage forensics for incident response. Conducted bit-stream disk imaging with FTK Imager, analyzed filesystem artifacts with Autopsy, extracted volatile memory dumps with Volatility, traced network intrusions via deep packet captures, and enforced strict legal evidence chain of custody.
+            </p>
+            <div class="module-tags">
+              <span>Autopsy</span>
+              <span>FTK Imager</span>
+              <span>Volatility</span>
+              <span>Memory Forensics</span>
+              <span>Evidence Custody</span>
+              <span>Incident Response</span>
+            </div>
+          </div>
+
+          <!-- CMP600 Capstone Dissertation -->
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-score-pill score-first">74% First Class</div>
+              <span class="module-year">Final Year Capstone</span>
+            </div>
+            <h3 class="module-title">CMP600 Dissertation Project</h3>
+            <p class="module-desc">
+              Engineered the Door2Door real-time logistics system prototype. Developed an asynchronous FastAPI backend achieving sub-5ms P95 latency under high request concurrency, accompanied by 3 dedicated React portals (Client, Driver, Dispatcher) with JWT role-based security contracts.
+            </p>
+            <div class="module-tags">
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>Sub-5ms Latency</span>
+              <span>REST API</span>
+              <span>Pydantic</span>
+            </div>
+          </div>
+
+          <!-- Vulnerability and Penetration Testing -->
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-score-pill score-first">First Class Standard</div>
+              <span class="module-year">Year 3</span>
+            </div>
+            <h3 class="module-title">Vulnerability & Penetration Testing</h3>
+            <p class="module-desc">
+              Execution of full offensive security lifecycles following ethical hacking guidelines. Conducted port scanning and service fingerprinting with Nmap, automated vulnerability analysis, exploit validation with Metasploit, web proxy interception via Burp Suite, and legal compliance under the Computer Misuse Act 1990.
+            </p>
+            <div class="module-tags">
+              <span>OWASP Top 10</span>
+              <span>Nmap</span>
+              <span>Metasploit</span>
+              <span>Burp Suite</span>
+              <span>Kali Linux</span>
+              <span>Remediation Reports</span>
+            </div>
+          </div>
+
+          <!-- Secure Web Development -->
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-score-pill score-first">First Class Standard</div>
+              <span class="module-year">Year 2</span>
+            </div>
+            <h3 class="module-title">Secure Web Development</h3>
+            <p class="module-desc">
+              Defensive application engineering and attack vector mitigation. Built robust defense mechanisms preventing SQL Injections via PDO prepared statements, stored/reflected XSS through contextual output encoding, CSRF tokens, secure cookie session flags, and administrative tamper-proof audit trails.
+            </p>
+            <div class="module-tags">
+              <span>PHP / MySQL</span>
+              <span>Defensive Coding</span>
+              <span>SQLi Mitigation</span>
+              <span>XSS Prevention</span>
+              <span>CSRF Tokens</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Collaborative Dev -->
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-score-pill score-first">First Class Standard</div>
+              <span class="module-year">Year 2</span>
+            </div>
+            <h3 class="module-title">DevOps & Collaborative Development</h3>
+            <p class="module-desc">
+              Enterprise software engineering methodology using Agile/Scrum. Implemented CI/CD pipelines, Git feature-branching strategies (GitFlow), peer code reviews, continuous integration builds, and automated unit testing suites.
+            </p>
+            <div class="module-tags">
+              <span>Agile / Scrum</span>
+              <span>CI/CD Pipelines</span>
+              <span>Git Branching</span>
+              <span>Automated Testing</span>
+              <span>Code Reviews</span>
+            </div>
+          </div>
+
+          <!-- Intelligent Systems & AI -->
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-score-pill score-first">First Class Standard</div>
+              <span class="module-year">Year 2</span>
+            </div>
+            <h3 class="module-title">Intelligent Systems & AI</h3>
+            <p class="module-desc">
+              Machine learning algorithms, heuristic graph traversal, search optimization, and knowledge representation. Authored research papers analyzing evolutionary computing and intelligent decision-support architectures.
+            </p>
+            <div class="module-tags">
+              <span>Machine Learning</span>
+              <span>Heuristics</span>
+              <span>Research</span>
+              <span>Decision Systems</span>
+            </div>
+          </div>
+
+          <!-- Internet of Things -->
+          <div class="module-card">
+            <div class="module-header">
+              <div class="module-score-pill score-first">First Class Standard</div>
+              <span class="module-year">Year 2</span>
+            </div>
+            <h3 class="module-title">Internet of Things (IoT)</h3>
+            <p class="module-desc">
+              Embedded sensor topologies, low-power telemetry protocols, and IoT endpoint security. Analyzed cryptographic transport mechanisms for resource-constrained edge devices and hardware-to-cloud communication.
+            </p>
+            <div class="module-tags">
+              <span>Sensor Networks</span>
+              <span>Telemetry</span>
+              <span>Edge Security</span>
+              <span>Hardware API</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Engineering Projects -->
+    <section id="projects" class="section projects-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">PORTFOLIO & ARTEFACTS</span>
+          <h2 class="section-title">Production Engineering Projects</h2>
+          <p class="section-subtitle">Real codebases, active utilities, automated tests, and commercial platforms</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Projects (7)</button>
+          <button class="filter-btn" data-filter="security">Cyber Security & Forensics</button>
+          <button class="filter-btn" data-filter="systems">Systems & Infrastructure</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack & Distributed</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- 1. PEDToolBox -->
+          <article class="project-card" data-category="security systems">
+            <div class="project-card-top">
+              <div class="project-type-tag">Live Utility • ped.run</div>
+              <div class="project-links">
+                <a href="https://piermobayed.github.io/PEDToolBox/" target="_blank" rel="noopener noreferrer" title="Live Web Page" class="icon-link">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                </a>
+                <a href="https://github.com/PierMobayed/PEDToolBox" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">PEDToolBox — Windows Administration & Security Hardening</h3>
+
+            <div class="project-command-box">
+              <code>powershell iex(irm ped.run)</code>
+              <button class="btn-copy-inline" data-copy="powershell iex(irm ped.run)" title="Copy run command">Copy</button>
+            </div>
+
+            <p class="project-description">
+              Production-grade Windows 10 & 11 system administration and hardening suite with custom domain deployment (<a href="https://ped.run" target="_blank" class="accent-link">ped.run</a>). Features automated restore point creation with progress tracking, complete registry/services/tasks backup & disaster recovery, Windows Defender and UAC security policy enforcement, automated driver diagnostics, unattended zero-touch OS installation generation (<code>autounattend.xml</code>), and GUI bloatware removal.
+            </p>
+
+            <ul class="project-bullet-highlights">
+              <li>Instant execution via single PowerShell command</li>
+              <li>Registry, Services, and Task Scheduler backup and restoration</li>
+              <li>Defender and ExecutionPolicy security hardening</li>
+              <li>Zero-touch automated Windows installation generator</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>PowerShell</span>
+              <span>Batch</span>
+              <span>Windows Internals</span>
+              <span>Registry Hardening</span>
+              <span>Disaster Recovery</span>
+              <span>Automation</span>
+            </div>
+          </article>
+
+          <!-- 2. PM Bridge System -->
+          <article class="project-card" data-category="systems fullstack">
+            <div class="project-card-top">
+              <div class="project-type-tag">Agentic Mesh • 127+ Tests</div>
+              <div class="project-links">
+                <a href="https://github.com/PierMobayed/pm-bridge-system" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">PM Bridge System — Multi-Agent Orchestration & Automation</h3>
+
+            <p class="project-description">
+              Distributed agent orchestration engine connecting Copilot, Cursor Agent, Claude, Gemini, DeepSeek, and OpenAI via low-level Chrome DevTools Protocol (CDP) and REST endpoints (<code>:9470</code>, <code>:9471</code>). Implements dual-channel busy/idle routing, operator hold protocols (<code>OPERATOR_HOLD</code>), message deduplication, and an automated suite of 127+ integration and unit tests.
+            </p>
+
+            <ul class="project-bullet-highlights">
+              <li>Low-level CDP browser automation on ports 9222 and 9229</li>
+              <li>127+ comprehensive automated tests executed via native <code>node:test</code></li>
+              <li>Dual-channel idle/busy state machine to eliminate UI blocking</li>
+              <li>Standardized JSON message envelopes with SHA-256 deduplication</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>Node.js</span>
+              <span>Chrome DevTools (CDP)</span>
+              <span>Playwright</span>
+              <span>REST APIs</span>
+              <span>TDD (node:test)</span>
+              <span>Queues</span>
+            </div>
+          </article>
+
+          <!-- 3. CMP600 Dissertation -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-top">
+              <div class="project-type-tag">Final Dissertation • 74%</div>
+              <div class="project-links">
+                <a href="https://github.com/PierMobayed/CMP600_Dissertation_Project" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">CMP600 Door2Door — Distributed Real-Time Architecture</h3>
+
+            <p class="project-description">
+              Simulated multi-tier London courier platform featuring a high-performance Python FastAPI backend achieving sub-5ms P95 latency. Supported by 3 dedicated Vite React client portals (Customer, Driver, Office Dispatcher) with asynchronous SQLite persistence and JWT authentication.
+            </p>
+
+            <ul class="project-bullet-highlights">
+              <li>Sub-5ms P95 latency under high request loads</li>
+              <li>3 separate React client portals with responsive design</li>
+              <li>Pydantic data validation and contract enforcement</li>
+              <li>Comprehensive academic dissertation report (74% score)</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>FastAPI</span>
+              <span>React 18</span>
+              <span>Python</span>
+              <span>SQLite</span>
+              <span>REST API</span>
+              <span>High-Throughput</span>
+            </div>
+          </article>
+
+          <!-- 4. CPU Thermometer -->
+          <article class="project-card" data-category="systems fullstack">
+            <div class="project-card-top">
+              <div class="project-type-tag">Telemetry & SRE • Next.js 16</div>
+              <div class="project-links">
+                <a href="https://github.com/PierMobayed/cpu-thermometar" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">CPU Thermometer — Real-Time Hardware & Kernel Telemetry</h3>
+
+            <p class="project-description">
+              Real-time hardware telemetry and OS kernel diagnostics dashboard. Interfaces directly with thermal sensors and operating system kernel APIs via <code>systeminformation</code>. Monitors individual CPU core temperatures, clock frequencies, governor energy profiles, and thermal throttling in real time.
+            </p>
+
+            <ul class="project-bullet-highlights">
+              <li>Next.js 16 App Router, React 19, and Tailwind CSS</li>
+              <li>Per-core frequency and temperature sensor monitoring</li>
+              <li>Dynamic power profile and thermal throttling detection</li>
+              <li>Optimized low-latency server-to-client streaming</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>Next.js 16</span>
+              <span>React 19</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+              <span>systeminformation</span>
+              <span>SRE</span>
+            </div>
+          </article>
+
+          <!-- 5. Fleet Rental Management System -->
+          <article class="project-card" data-category="fullstack security">
+            <div class="project-card-top">
+              <div class="project-type-tag">Enterprise Portal • Laravel 11</div>
+              <div class="project-links">
+                <a href="https://github.com/PierMobayed/fleet-rental-management-system" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Fleet Rental Management System — RBAC & Stripe Gateway</h3>
+
+            <p class="project-description">
+              Commercial vehicle rental management portal featuring Role-Based Access Control (Admin, Fleet Manager, Customer) via Spatie permissions. Integrates Stripe payments with webhook signature verification, vehicle availability workflows, and automated PDF contract generation.
+            </p>
+
+            <ul class="project-bullet-highlights">
+              <li>Role-Based Access Control (RBAC) across models and routes</li>
+              <li>Stripe checkout integration with secure webhook verification</li>
+              <li>Dynamic PDF rental agreement and invoice generation (DomPDF)</li>
+              <li>Vehicle booking state machine and audit logs</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>Laravel 11</span>
+              <span>PHP</span>
+              <span>Blade</span>
+              <span>Spatie RBAC</span>
+              <span>Stripe API</span>
+              <span>DomPDF</span>
+            </div>
+          </article>
+
+          <!-- 6. Tempo Talents -->
+          <article class="project-card" data-category="fullstack security">
+            <div class="project-card-top">
+              <div class="project-type-tag">Work-Based Learning • Auth</div>
+              <div class="project-links">
+                <a href="https://github.com/PierMobayed/StudyElizabethSchool" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Tempo Talents — Full-Stack Recruitment & Auth Platform</h3>
+
+            <p class="project-description">
+              Production recruitment and talent booking portal developed for university Work-Based Learning. Built with Node.js and Express, implementing salted Bcrypt password hashing, stateless JSON Web Tokens (JWT) for session management, and MongoDB schema validation.
+            </p>
+
+            <ul class="project-bullet-highlights">
+              <li>Stateless JWT authentication and secure token expiration</li>
+              <li>Salted Bcrypt password hashing (12 rounds)</li>
+              <li>RESTful API endpoints with structured JSON schemas</li>
+              <li>MongoDB document validation and relationship modeling</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>JWT</span>
+              <span>Bcrypt</span>
+              <span>REST API</span>
+            </div>
+          </article>
+
+          <!-- 7. Secure Web Application -->
+          <article class="project-card" data-category="security">
+            <div class="project-card-top">
+              <div class="project-type-tag">Defensive Security • OWASP</div>
+              <div class="project-links">
+                <a href="https://github.com/PierMobayed/StudyElizabethSchool" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="icon-link">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Secure Web Application & Defense System</h3>
+
+            <p class="project-description">
+              Hardened web application specifically engineered to withstand OWASP Top 10 web attack vectors. Implemented prepared statements to neutralize SQL Injection, contextual sanitization to prevent Cross-Site Scripting (XSS), anti-CSRF token verification, and immutable security audit logging.
+            </p>
+
+            <ul class="project-bullet-highlights">
+              <li>Comprehensive SQL Injection mitigation via PDO</li>
+              <li>Strict input validation & output encoding (XSS prevention)</li>
+              <li>Cryptographic CSRF token validation on sensitive operations</li>
+              <li>Tamper-evident administrative audit logging</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Defensive Security</span>
+              <span>OWASP Mitigation</span>
+              <span>Audit Logging</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills" class="section skills-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">TECHNICAL CAPABILITIES</span>
+          <h2 class="section-title">Core Competencies & Toolchain</h2>
+          <p class="section-subtitle">Validated skills across infrastructure, offensive/defensive security, and software development</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Networking & Infrastructure -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🌐</span>
+              <h3 class="skill-cat-title">Networking & Protocols</h3>
+            </div>
+            <p class="skill-cat-desc">Enterprise routing, packet diagnostics, and topology design.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Cisco IOS (83%)</span>
+              <span class="skill-pill">BGP & OSPF</span>
+              <span class="skill-pill">VLANs & Trunking</span>
+              <span class="skill-pill">TCP/IP Architecture</span>
+              <span class="skill-pill">Wireshark Analysis</span>
+              <span class="skill-pill">Subnetting (IPv4/IPv6)</span>
+              <span class="skill-pill">DNS / DHCP / VPN</span>
+              <span class="skill-pill">Firewall Rules</span>
+              <span class="skill-pill">IASME Standards</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Cyber Security & Forensics -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🛡️</span>
+              <h3 class="skill-cat-title">Security & Forensics</h3>
+            </div>
+            <p class="skill-cat-desc">Offensive testing, forensic acquisition, and defense in depth.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Digital Forensics (77%)</span>
+              <span class="skill-pill">FTK Imager</span>
+              <span class="skill-pill">Autopsy</span>
+              <span class="skill-pill">Volatility Memory</span>
+              <span class="skill-pill">Incident Response</span>
+              <span class="skill-pill">OWASP Top 10</span>
+              <span class="skill-pill">Nmap & Recon</span>
+              <span class="skill-pill">Metasploit</span>
+              <span class="skill-pill">Burp Suite</span>
+              <span class="skill-pill">OS Hardening</span>
+              <span class="skill-pill">Computer Misuse Act 1990</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Programming & Scripting -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">💻</span>
+              <h3 class="skill-cat-title">Languages & Scripting</h3>
+            </div>
+            <p class="skill-cat-desc">Automated scripting, systems languages, and backend development.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">PowerShell</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">Bash / Shell</span>
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Batch Automation</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Frameworks, DevOps & Tools -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">⚙️</span>
+              <h3 class="skill-cat-title">Frameworks & DevOps</h3>
+            </div>
+            <p class="skill-cat-desc">Production frameworks, testing, orchestration, and databases.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">React & Next.js 16</span>
+              <span class="skill-pill">Node.js / Express</span>
+              <span class="skill-pill">Laravel 11</span>
+              <span class="skill-pill">TDD (node:test)</span>
+              <span class="skill-pill">Chrome DevTools (CDP)</span>
+              <span class="skill-pill">Playwright</span>
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">Linux & Windows Internals</span>
+              <span class="skill-pill">Git / GitHub</span>
+              <span class="skill-pill">Stripe API</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Training & Certifications Box -->
+        <div class="certifications-box">
+          <h4 class="cert-title">Recognized Training & Certifications</h4>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-icon">📜</span>
+              <div>
+                <strong>Software University (SoftUni)</strong>
+                <p>Advanced JavaScript, Data Structures & Algorithms, Object-Oriented Programming (OOP), Unit Testing (Mocha/Chai).</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">🌐</span>
+              <div>
+                <strong>Cisco Enterprise Networking Curriculum</strong>
+                <p>Enterprise Routing & Switching, BGP, OSPF, VLANs, IPv4/IPv6 Subnetting, IASME Cyber Assurance.</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">🔍</span>
+              <div>
+                <strong>Digital Forensics & Incident Response Practice</strong>
+                <p>Hands-on disk and memory analysis using Autopsy, FTK Imager, Wireshark, Volatility, and evidentiary chain of custody.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Emulator Section -->
+    <section id="terminal-section" class="section terminal-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">INTERACTIVE TERMINAL</span>
+          <h2 class="section-title">Query Profile Via Shell</h2>
+          <p class="section-subtitle">Type commands or click quick action buttons below</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="terminal-widget-container">
+          <div class="terminal-window">
+            <div class="terminal-header-bar">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-center-title">pier@leeds-node: ~ (zsh)</div>
+              <div class="terminal-status-indicator">● ONLINE</div>
+            </div>
+
+            <div class="terminal-body" id="terminal-body">
+              <div class="terminal-output-line">
+                <span class="term-greeting">Welcome to Pier Mobayed's Interactive Shell v2.4</span>
+              </div>
+              <div class="terminal-output-line text-muted">
+                BSc (Hons) Computer Science • First Class Honours (75%) • Leeds, UK
+              </div>
+              <div class="terminal-output-line text-muted">
+                Type <span class="term-highlight">'help'</span> to see available commands or click the shortcut buttons below.
+              </div>
+              <div id="terminal-history"></div>
+
+              <div class="terminal-input-row">
+                <span class="term-prompt">visitor@pier-portfolio:~$</span>
+                <input type="text" id="terminal-input" class="terminal-input-field" autocomplete="off" spellcheck="false" placeholder="type 'help', 'skills', 'projects', 'cv'..." autofocus>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Command Shortcut Buttons -->
+          <div class="terminal-quick-buttons">
+            <span class="quick-label">Quick Commands:</span>
+            <button class="quick-cmd-btn" data-cmd="help">help</button>
+            <button class="quick-cmd-btn" data-cmd="about">about</button>
+            <button class="quick-cmd-btn" data-cmd="education">education</button>
+            <button class="quick-cmd-btn" data-cmd="projects">projects</button>
+            <button class="quick-cmd-btn" data-cmd="skills">skills</button>
+            <button class="quick-cmd-btn" data-cmd="ped.run">ped.run</button>
+            <button class="quick-cmd-btn" data-cmd="cv">cv</button>
+            <button class="quick-cmd-btn" data-cmd="contact">contact</button>
+            <button class="quick-cmd-btn btn-clear-terminal" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">GET IN TOUCH</span>
+          <h2 class="section-title">Let's Discuss Opportunities</h2>
+          <p class="section-subtitle">Open to Graduate / Junior Cyber Security, Network, Infrastructure, and Systems roles</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column">
+            
+            <div class="contact-card clickable" id="contact-copy-email">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-detail">
+                <div class="contact-type">Direct Email (Click to copy)</div>
+                <div class="contact-value">piermtech@gmail.com</div>
+              </div>
+              <span class="contact-action-badge">Copy</span>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div class="contact-detail">
+                <div class="contact-type">Phone Number</div>
+                <div class="contact-value">07387226498</div>
+              </div>
+              <a href="tel:07387226498" class="contact-action-badge">Call</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div class="contact-detail">
+                <div class="contact-type">Location</div>
+                <div class="contact-value">Leeds, United Kingdom</div>
+                <div class="contact-sub">Available for Leeds on-site, hybrid, or UK remote roles</div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">🌐</div>
+              <div class="contact-detail">
+                <div class="contact-type">Professional Profiles</div>
+                <div class="contact-links-row">
+                  <a href="https://github.com/PierMobayed" target="_blank" rel="noopener noreferrer" class="contact-social-pill">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>github.com/PierMobayed</span>
+                  </a>
+                  <a href="https://linkedin.com/in/piermobayed" target="_blank" rel="noopener noreferrer" class="contact-social-pill">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>linkedin.com/in/piermobayed</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Direct Message Form -->
+          <div class="contact-form-column">
+            <form id="contact-form" class="contact-form">
+              <h3 class="form-title">Send a Quick Message</h3>
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" required placeholder="e.g. Alex Smith / Hiring Team">
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" required placeholder="alex@company.com">
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" required placeholder="Role inquiry / Technical discussion">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="4" required placeholder="Hi Pier, we'd like to discuss an opportunity..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive CV Modal -->
+  <div class="modal-overlay" id="cv-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <h3 class="modal-title">Curriculum Vitae — Pier Mobayed</h3>
+          <span class="modal-subtitle">BSc (Hons) Computer Science • First Class (75%)</span>
+        </div>
+        <div class="modal-actions">
+          <a href="cv.html" target="_blank" class="btn btn-sm btn-outline">Open Standalone</a>
+          <button id="modal-print-btn" class="btn btn-sm btn-primary">Print / PDF</button>
+          <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="cv.html" id="cv-iframe" class="cv-iframe" title="Pier Mobayed CV Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-name">Pier Mobayed</span>
+        <span class="footer-tagline">Cyber Security Engineer • Network & Systems Specialist</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/PierMobayed" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://ped.run" target="_blank">ped.run</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pier Mobayed. Built for high performance, modern UX, and security standards.</p>
+        <button id="back-to-top" class="back-to-top-btn" title="Back to top">↑ Top</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
