@@ -35,7 +35,7 @@ First-Class Honours Computer Science graduate specializing in Cyber Security and
 ---
 
 ## Featured Projects & Technical Artefacts
-### [CMP600 — Door2Door Logistics Prototype](https://github.com/PierMobayed/CMP600_Dissertation_Project)
+### [CMP600 — Door2Door Logistics Prototype](https://cmp600-door2door-production.up.railway.app/docs)
 *FastAPI, React, SQLite, Python, REST API, Pydantic*
 
 Simulated multi-tier London courier platform featuring a FastAPI backend, 3 Vite React client/office/driver portals, sub-5ms P95 latency, and role-based API security.
@@ -45,27 +45,27 @@ Simulated multi-tier London courier platform featuring a FastAPI backend, 3 Vite
 
 Distributed agent orchestration engine connecting Copilot, Cursor Agent, Claude, Gemini, DeepSeek, and OpenAI via low-level Chrome DevTools Protocol (CDP) and REST endpoints. Features dual-channel busy/idle routing, operator hold protocols, message deduplication, and a comprehensive automated suite of 127+ integration and unit tests.
 
-### [PEDToolBox — Open-Source Windows System Administration & Hardening Utility](https://github.com/PierMobayed/PEDToolBox)
+### [PEDToolBox — Open-Source Windows System Administration & Hardening Utility](https://ped.run)
 *PowerShell, Batch Scripting, Windows Internals, Registry / Services Hardening, Automation, Deployment Scripts*
 
 Production-grade Windows 10/11 maintenance, optimization, and security suite deployed globally via one-line PowerShell execution (ped.run / iex(irm ped.run)). Features automated system restore points with visual progress tracking, complete registry/services/scheduled tasks backup & restore, Defender and UAC security hardening, unattended Windows installation generator (autounattend.xml), and GUI bloatware removal.
 
-### [CPU Thermometer — Real-Time Hardware Telemetry & System Diagnostics Dashboard](https://github.com/PierMobayed/cpu-thermometar)
+### [CPU Thermometer — Real-Time Hardware Telemetry & System Diagnostics Dashboard](https://cpu-thermometar.vercel.app)
 *Next.js 16, React 19, TypeScript, Tailwind CSS, systeminformation, Kernel Telemetry*
 
 Modern hardware and OS telemetry dashboard interfacing directly with system sensors and kernel APIs via systeminformation. Tracks real-time CPU core temperatures, clock frequencies, power profiles (governor modes), and thermal throttling events with optimized streaming.
 
-### [Enterprise Fleet Rental & Resource Management System](https://github.com/PierMobayed/fleet-rental-management-system)
+### [Enterprise Fleet Rental & Resource Management System](https://pm.up.railway.app)
 *Laravel 11, PHP, Blade, Tailwind CSS, Spatie Permissions (RBAC), Stripe API, DomPDF*
 
 Commercial vehicle rental management portal with granular Role-Based Access Control (RBAC) via Spatie (Admin, Manager, Customer). Features end-to-end encrypted Stripe checkout integration with webhook signature verification, automated PDF rental agreement and invoice generation, and fleet scheduling workflows.
 
-### [Tempo Talents — Full-Stack Recruitment & Auth Platform](https://github.com/PierMobayed/StudyElizabethSchool)
-*Node.js, Express, MongoDB, JWT, Bcrypt, REST API*
+### [Tempo Talents — Business & Cleaner Booking Platform](https://tempo-web-production-767b.up.railway.app)
+*PHP, MySQL, Apache, Role-based dashboards*
 
-Commercial-grade talent and booking management system built for Work-Based Learning. Engineered backend authentication with Node.js/Express, Bcrypt password hashing, JWT stateless session tokens, and MongoDB/Mongoose schemas.
+Work-based learning platform connecting businesses with professional cleaners. Businesses post jobs and manage bookings; cleaners keep profiles and availability; administrators oversee users, jobs, and transactions. Built with PHP and MySQL.
 
-### [Secure Web Application & Defense System](https://github.com/PierMobayed/StudyElizabethSchool)
+### [Secure Web Application & Defense System](https://fixerupper-production.up.railway.app)
 *PHP, MySQL, Defensive Security, OWASP Mitigation, Input Sanitization*
 
 Enterprise-ready web application built to withstand modern attack vectors. Implemented prepared SQL statements against SQL injection, strict input sanitization against XSS, role-based access control (RBAC), and admin audit logging.
