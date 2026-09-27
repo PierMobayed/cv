@@ -35,7 +35,7 @@ First-Class Honours Computer Science graduate specializing in Cyber Security and
 ---
 
 ## Featured Projects & Technical Artefacts
-### [CMP600 — Door2Door Logistics Prototype](https://cmp600-door2door-production.up.railway.app/docs)
+### [CMP600 — Door2Door Logistics Prototype](https://cmp600-client-production.up.railway.app)
 *FastAPI, React, SQLite, Python, REST API, Pydantic*
 
 Simulated multi-tier London courier platform featuring a FastAPI backend, 3 Vite React client/office/driver portals, sub-5ms P95 latency, and role-based API security.
